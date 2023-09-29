@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Texto</h2>
+    <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+    <h2>Radio Buton</h2>
+    <form action="control_form.php" method="get">
+        <fieldset>
+            <input type="radio" name="sexo" value="hombre" id="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" name="sexo" value="mujer" id="mujer" checked="checked">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" name="sexo" value="otro" id="otro" checked="checked">
+            <label for="otro">Otro</label>
+        </fieldset>
+    <h2>Selector de opciones</h2>
+    <p>Marca de coche</p>
+    <select name="coche">
+        <option>Volvo</option>
+        <option>Toyota</option>
+        <option>Mercedes</option>
+    </select>
+    <h2>Area de Texto</h2>
+    <form action="servicio.php" method="get">
+        <textarea rows="10" cols="40" name="texto">Texto inicial dentro del campo</textarea><br>
+        <input type="submit" value="enviar"><br>
+    </form>
+    <h2>Contraseña</h2>
+    Keyword <input type="password">
+
+    <h2>Checkbox</h2>
+    <label for="vehiculo">Elige cual es tu vehiculo</label><br>
+        <label for="bici">Tengo una bici</label>
+        <input type="checkbox" name="bici" id="bici" value="bici"><br>
+        <label for="coche">Tengo un coche</label>
+        <input type="checkbox" name="coche" id="coche" value="coche"><br>
+        <label for="moto">Tengo una moto</label>
+        <input type="checkbox" name="moto" id="moto" value="moto"><br>
+
+    <h2>Subida de archivos</h2>
+    <form action="form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+        <p>
+          Sube el/los archivos a subir:
+          <input type="file" name="archivosubido">
+          <input type="submit" value="Enviar datos">
+        </p>
+      
+      </form>
+    </form>
+</body>
+</html>
