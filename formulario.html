@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function testForm(){
+            alert(document.getElementById('nombre').value + " " + document);
+            return false;
+        }
+    </script>
 </head>
 <body>
+    <h1>Formulario</h1>
+    <form onsubmit="return testForm()">
     <h2>Texto</h2>
     <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre">
@@ -19,12 +27,13 @@
             <input type="radio" name="sexo" value="otro" id="otro" checked="checked">
             <label for="otro">Otro</label>
         </fieldset>
+    </form>
     <h2>Selector de opciones</h2>
-    <p>Marca de coche</p>
-    <select name="coche">
-        <option>Volvo</option>
-        <option>Toyota</option>
-        <option>Mercedes</option>
+    <label for="selector">Marca de coche</label>
+    <select name="coche" id="5" size="1">
+        <option value="Volvo">Volvo</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Mercedes">Mercedes</option>
     </select>
     <h2>Area de Texto</h2>
     <form action="servicio.php" method="get">
@@ -51,7 +60,7 @@
           <input type="submit" value="Enviar datos">
         </p>
       
-      </form>
+    </form>
     </form>
 </body>
 </html>
